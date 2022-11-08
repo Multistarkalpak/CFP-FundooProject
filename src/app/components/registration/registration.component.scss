@@ -1,0 +1,145 @@
+.Box {
+
+    margin-top: 30px;
+    margin-left: 300px;
+    border: 2px solid rgb(131, 131, 230);
+    border-radius: 10px;
+    height: 600px;
+    width: 650px;
+    position: absolute;
+}
+
+
+.box2{
+width: 50%;
+}
+
+.Google {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h3{
+    padding-top: 2px;
+    font-size: 25px;
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    font-size: 2rem;
+}
+
+ul li:nth-child(1) {
+    color: rgb(21, 51, 226);
+}
+
+ul li:nth-child(2) {
+    color: rgb(226, 28, 21);
+}
+
+ul li:nth-child(3) {
+    color: rgb(230, 201, 36);
+}
+
+ul li:nth-child(4) {
+    color: rgb(21, 51, 226);
+}
+
+ul li:nth-child(5) {
+    color: rgb(75, 233, 27);
+}
+
+ul li:nth-child(6) {
+    color: rgb(226, 28, 21);
+}
+
+.Box h3 {
+    margin: 20px;
+    padding-top: 40px;
+}
+
+.content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.flex {
+    margin-left: 10px;
+    display: flex;
+      
+}
+
+.img {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 3px;
+    padding-top: 100px;
+    left: 370px;
+}
+
+.p {
+
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+.p1 {
+    margin-left: 10px;
+    color: rgb(25, 119, 226);    
+}
+
+.password {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    bottom: 50px;
+}
+
+.p2{
+    margin-left: 10px;
+    opacity: 0.8;
+}
+.password{
+    margin-left: 10px;
+}
+
+.cap1{
+    text-align: center;
+    opacity: 0.8;
+}
+
+.sign{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 20px  ;
+    padding-top: 20px;
+}
+.sign h3{
+    color: rgb(6, 112, 233);
+    position: relative;
+    bottom: 50px;
+}
+
+.sign button{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(14, 125, 223);
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 5px;
+    left: 200px;
+}

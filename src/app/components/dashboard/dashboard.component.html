@@ -1,0 +1,53 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="example-toolbar">
+
+    <button class="hov" mat-icon-button (click)="snav.toggle()">
+      <mat-icon class="menu-icon">menu</mat-icon>
+    </button>
+    <div class="icon">
+      <img src="../../assets/keep icon.png">
+    </div>
+    <h1 class="cap">Fundoo Notes</h1>
+
+    <div class="search-box">
+      <img src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <input matInput placeholder="Search" style="width: 650px;">
+    </div>
+    <div class="right_icons">
+      <img src="../../../assets/refresh_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <img src="../../../assets/dns_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <img src="../../../assets/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+
+    </div>
+    <div class="menu">
+      <img src="../../../assets/apps_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      <img src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+
+    </div>
+  </mat-toolbar>
+
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [fixedInViewport]="mobileQuery.matches" fixedTopGap="560">
+      <mat-nav-list class="nav-list">
+        <a mat-list-item>
+          <img src="../../../assets/lightbulb_FILL0_wght400_GRAD0_opsz48.svg" />Notes</a>
+        <a mat-list-item>
+          <img src="../../../assets/notifications_active_FILL0_wght400_GRAD0_opsz48.svg" />Reminder</a>
+        <a mat-list-item>
+          <img src="../../../assets/edit_FILL0_wght400_GRAD0_opsz48.svg" />Label</a>
+        <a mat-list-item>
+          <img src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg" />Archive</a>
+        <a mat-list-item>
+          <img src="../../../assets/delete_FILL0_wght400_GRAD0_opsz48.svg" />Trash</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet>
+
+      </router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>

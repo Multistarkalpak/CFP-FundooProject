@@ -1,0 +1,32 @@
+<div class="Box">
+    <form [formGroup]="forgetemailForm" (ngSubmit)="onSubmit()">
+        <div class="box1">
+            <div class="Google">
+                <ul>
+                    <li>F</li>
+                    <li>u</li>
+                    <li>n</li>
+                    <li>D</li>
+                    <li>o</li>
+                    <li>o</li>
+                </ul>
+            </div>
+            <div class="email">
+                <h2>Find your email</h2>
+            </div>
+            <div class="r-email">
+                <h3>Enter your phone number and recovery email</h3>
+            </div>
+            <p>
+                <mat-form-field appearance="outline" style="width: 330px;">
+                    <mat-label>Phone number or email</mat-label>
+                    <input matInput placeholder="" formControlName="email" />
+                    <mat-error>Enter The phone number or email</mat-error>
+                </mat-form-field>
+            </p>
+            <div class="button">
+                <button class="but">Next</button>
+            </div>
+        </div>
+    </form>
+</div>

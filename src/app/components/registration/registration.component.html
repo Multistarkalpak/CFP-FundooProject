@@ -1,0 +1,85 @@
+<div class="Box">
+  <div class="box1">
+    <div class="Google">
+      <ul>
+        <li>F</li>
+        <li>u</li>
+        <li>n</li>
+        <li>D</li>
+        <li>o</li>
+        <li>o</li>
+      </ul>
+    </div>
+    <div class="h3">
+      <h3 class="h3">Create your Own Google Account</h3>
+    </div>
+    <form [formGroup]="registerForm" >
+      <div class="content" fxLayoutGap="20px" >
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="" formControlName="firstname" />
+            <mat-error>Enter The first Name</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="" formControlName="lastName" />
+            <mat-error>Enter The last Name</mat-error>
+          </mat-form-field>
+        </p>
+
+      </div>
+      <div class="flex">
+        <p>
+          <mat-form-field appearance="outline" style="width: 428px;">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="" formControlName="email"/>
+            <mat-error>Choose a Gmail address</mat-error>
+          </mat-form-field>
+        </p>
+      </div>
+      <p class="p">You Can use letters,numbers & periods</p>
+      <div class="p1">
+        Use my Current email address instead
+      </div>
+      <div class="password" fxLayoutGap="20px">
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput placeholder="" formControlName="password" />
+            <mat-error>Enter the password</mat-error>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>confirmPassword</mat-label>
+            <input matInput placeholder="" formControlName="confirmPassword" />
+          </mat-form-field>
+        </p>
+      </div>
+      <div class="p2">
+        Use 8 or more characters with a mix of letters, numbers & symbols
+      </div>
+      <section class="password">
+        <mat-checkbox class="example-margin"> Show password</mat-checkbox>
+      </section>
+
+      <div class ="sign">
+        <h3>Sign in instead </h3>
+        <button type="button" (click)="onSubmit()">Next</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="box2">
+    <figure class="img">
+      <img src="../../../assets/account.svg" alt="image not found">
+      <figcaption class="cap1">One account. All of Fundoo <br> working for you.</figcaption>
+    </figure>
+  </div>
+
+
+</div>

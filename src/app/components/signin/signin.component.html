@@ -1,0 +1,51 @@
+<div class="Box">
+    <form [formGroup]="signinForm">
+        <div class="box1">
+            <div class="Google">
+                <ul>
+                    <li>F</li>
+                    <li>u</li>
+                    <li>n</li>
+                    <li>D</li>
+                    <li>o</li>
+                    <li>o</li>
+                </ul>
+            </div>
+            <div class="email">
+                <h2>Sign in</h2>
+            </div>
+            <div class="r-email">
+                <h3>Use your Google Account</h3>
+            </div>
+            <p>
+                <mat-form-field appearance="outline" style="width: 400px;">
+                    <mat-label>Email or Phone </mat-label>
+                    <input matInput placeholder="" formControlName="email" />
+                    <mat-error>Enter The email or phonenumber</mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="outline" style="width: 400px;">
+                    <mat-label>Password </mat-label>
+                    <input matInput placeholder="" formControlName="password" />
+                    <mat-error>Enter password</mat-error>
+                </mat-form-field>
+            </p>
+            <div class="fm">
+                Forgot mail?
+            </div>
+            <div class="cap">
+                Not your computer? Use Guest mode to sign in privately.
+            </div>
+            <div class="cap1">
+                Learn More
+            </div>
+            <div class="cap2">
+                Create Account
+            </div>
+        </div>  
+        <div class="sign">
+            <button type="button" (click)="onSubmit()">Next</button>
+        </div>
+    </form>
+</div>
